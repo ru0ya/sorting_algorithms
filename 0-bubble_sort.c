@@ -20,9 +20,8 @@ void bubble_sort(int *array, size_t size)
 		{
 			if (array[j] > array[j + 1])
 			{
-				int temp
+				int temp = array[j];
 
-				temp = array[j];
 				array[j] = array[j + 1];
 				array[j + 1] = temp;
 				print_array(array, size);
