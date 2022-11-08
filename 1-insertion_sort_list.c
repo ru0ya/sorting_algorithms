@@ -10,14 +10,14 @@
 
 void insertion_sort_list(listint_t **list)
 {
-	size_t i, j, size;
+	listint_t *i, *j, *size;
 
-	for (i = 0; i < size; i++)
+	for (i = 1; i < size; i++)
 	{
 		int temp = list[i];
 		j = (i-1);
 
-		while (j >= 0 && temp[j] > temp)
+		while (j >= 0 && temp > list[j])
 		{
 			list[j + 1] = list[j];
 			j = j - 1;
