@@ -22,9 +22,11 @@ void quick_sort(int *array, size_t size)
 		if (array[j] <= pivot)
 		{
 			i++;
-			int temp = array[low]
+			int temp = array[low];
+			array[low] = array[high];
+
 		}
 	}
-	swap(array[i + 1], array[high]);
+	array[i + 1] = array[high];
 	print_array(array, size);
 }
