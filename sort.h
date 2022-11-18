@@ -21,6 +21,9 @@ typedef struct listint_s
 
 void print_list(const listint_t *list);
 void print_array(const int *array, size_t size);
+void check_list(const listint_t *list);
+void check_array(const int *array, size_t size);
+int *rand_array(int len, int max);
 
 /*sorting algorithm*/
 void swap_nodes(listint_t **h, listint_t **n1, listint_t *n2);
