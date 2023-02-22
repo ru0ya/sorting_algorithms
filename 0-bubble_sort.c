@@ -2,12 +2,10 @@
 
 
 /**
- * swap_ints - swaps two integers in an array
- *@a: first integer to swap
- *@b: second integer to swap
- *
+ * swap_ints - Swap two integers in an array.
+ * @a: The first integer to swap.
+ * @b: The second integer to swap.
  */
-
 void swap_ints(int *a, int *b)
 {
 	int tmp;
@@ -18,28 +16,25 @@ void swap_ints(int *a, int *b)
 }
 
 /**
- * bubble_sort - sorts an array of integers in ascending order
- *@size: size of list
- *@array: list to sort
- *
- * Returns: null
+ *bubble_sort - Sorts an array of integers in ascending order
+ *@array: An array of integers to be sorted.
+ *@size: Size of the array.
+ *Return: Nothing.
  */
-
 void bubble_sort(int *array, size_t size)
 {
-	size_t i, j;
+	size_t a, b;
 
-
-	for (i = 0; i < size; i++)
+	for (a = 0; a < size; a++)
 	{
-		for (j = 0; j < (size - 1); j++)
+		for (b = 0; b < (size - 1); b++)
 		{
-			if (array[j] > array[j + 1])
+			if (array[b] > array[b + 1])
 			{
-				int temp = array[j];
+				int temp = array[b];
 
-				array[j] = array[j + 1];
-				array[j + 1] = temp;
+				array[b] = array[b + 1];
+				array[b + 1] = temp;
 				print_array(array, size);
 			}
 		}
